@@ -9,7 +9,6 @@ export class ObjectTableComponent implements OnInit {
   @Input()
   list:any [];
   constructor() { }
-
   ngOnInit(): void {
   }
 
