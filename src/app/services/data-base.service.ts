@@ -16,7 +16,7 @@ export class DataBaseService {
     this.object = this.context.list(listName).valueChanges();
     this.object.subscribe(data => this.objectList = data, error => this.error = true);
     if (this.error) {
-      return "ha ocurrido un error"
+      return [{error:"ha ocurrido un error"}];
     }
     else{
       return this.objectList;

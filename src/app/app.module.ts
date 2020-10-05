@@ -6,10 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
+import { ObjectTableComponent } from './components/object-table/object-table.component';
+import { ObjectListComponent } from './components/object-list/object-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ObjectTableComponent,
+    ObjectListComponent
   ],
   imports: [
     BrowserModule,
